@@ -1,0 +1,11 @@
+<p>product works!</p>
+
+<div appBackgroundColor>{{'Hello, World!' | uppercasepipe}}</div>
+<a routerLink="/dashboard">Go to Dashboard</a>
+
+
+<app-child [name]="'child'" (childeve)="takeChildEve($event)"></app-child>
+
+@for (item of items;track item.id) {
+   {{item.userId}}
+}
